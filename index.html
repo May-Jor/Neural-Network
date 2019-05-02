@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<body style="text-align: center;">
+	<link rel="stylesheet" href="skeleton.css">
+	<style>
+		td{
+			text-align: center;
+		}
+	</style>
+	<h2 class="four columns" id="numNeural" style="margin: auto;"></h2>
+	<button class="one column" onclick="speed('slow');">-</button>
+	<h2 class="two columns" id="game-speed" style="margin: auto; text-align: center; font-size: 23px">Speed: 1000/ms</h2>
+	<button class="one column" onclick="speed('fast');">+</button>
+	<h2 class="four columns" id="score-count" style="margin: auto;">Score: </h2>
+	<canvas id="canvas" width="1000px" height="400px" style="border: 1px solid black; margin: auto;"></canvas>
+	<table id="stat-track" style="margin: auto;">
+			<th>Generation</th>
+			<th>Best Network Fitness</th>
+			<th>Average Generation Fitness</th>
+	</table>
+	<script src="objects.js"></script>
+	<script src="canvas.js"></script>
+	<script src="neuralNetwork.js"></script>
+	<script src="population.js"></script>
+	<script src="game.js"></script>
+	</body>
+</html>
